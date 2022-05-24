@@ -8,19 +8,19 @@ namespace ConsoleApp1
         {
             Renderer renderer = new Renderer();
             Player player = new Player(5,5);
-            renderer.ShowPosition(player._xPosition,player._yPosition);
+            renderer.ShowPosition(player.XPosition,player.YPosition);
         }
     }
 
     class Player
     {
-        public int _xPosition { get; private set; }
-        public int _yPosition { get; private set; }
+        public int XPosition { get; private set; }
+        public int YPosition { get; private set; }
 
         public Player(int xPosition, int yPosition)
         {
-            _xPosition = xPosition;
-            _yPosition = yPosition;
+            XPosition = xPosition;
+            YPosition = yPosition;
         }
     }
     class Renderer
